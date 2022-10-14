@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import LoginControl from './LoginControl';
-import Greeting from './Greeting';
-import LoginButton from './LoginButton';
-import LogoutButton from './LogoutButton';
+import AddGamers from './AddGamers';
+import GameRoom from './GameRoom';
+import Game from './Game';
+//import LoginControl from './LoginControl';
+//import Greeting from './Greeting';
+//import LoginButton from './LoginButton';
+//import LogoutButton from './LogoutButton';
 //import Person from './Person';
 //import Products from './components/props/Products';
 //import Parent from './components/props/Parent';
@@ -14,13 +17,13 @@ import LogoutButton from './LogoutButton';
 function App() {
 
   const Heading = () => <h1>Login!</h1>
+
   return (
     <div className="App">
-
-    <LoginControl/>
-    <Greeting/>
-    <LoginButton/>
-    <LogoutButton/>
+      
+      <GameRoom/>
+      <Game/>
+      <AddGamers/>
     
     </div>
   );
