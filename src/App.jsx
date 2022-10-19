@@ -1,15 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import FilmReq from './FilmReq';
-import React from 'react';
+import SearchableList from './Searchabalelist';
 
 function App() {
 
-  //const Heading = () => <h1>Login!</h1>
-
-  return (
+   return (
     <div className="App">
-      <FilmReq/>
+      <SearchableList/>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const EmployeeInfo = () => {
@@ -14,10 +14,10 @@ const EmployeeInfo = () => {
       .get("http://dummy.restapiexample.com/api/v1/employees")
       .then((res) => res)
       .then((result) => {
-          setIsLoaded(true);
-          setItems(result.data.data);
+        setIsLoaded(true);
+        setItems(result.data.data);
 
-        },
+      },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow
         // exceptions from actual bugs in components.
@@ -35,7 +35,7 @@ const EmployeeInfo = () => {
   } else {
     return (
       <ul>
-          {console.log(items)}
+        {console.log(items)}
         {items.map((item) => (
           <li key={item.id}>
             {item.employee_name}
@@ -45,4 +45,4 @@ const EmployeeInfo = () => {
     );
   }
 }
-export default EmployeeInfo;  
+export default EmployeeInfo;
