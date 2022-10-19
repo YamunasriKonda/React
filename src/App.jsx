@@ -4,6 +4,7 @@ import './App.css';
 import Home from './Home'
 import Users from './Users';
 import Contact from './contact';
+import notfound from './notfound';
 
 function App() {
   return (
@@ -13,25 +14,24 @@ function App() {
         <ul>
           <li>
             <Link to="/">Home</Link>
-            </li>
-            <li>
+          </li>
+          <li>
             <Link to="/users">Users</Link>
-            </li>
-            <li>
+          </li>
+          <li>
             <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/notfound">notfound</Link>
           </li>
         </ul>
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />}/>
+          <Route path="/contact" element={<Contact />} />
           <Route path="/users" element={<Users />} />
-          
-
+          <Route path="/notfound" element={<notFound />} />
         </Routes>
-
-
-
       </div>
     </Router>
   );
