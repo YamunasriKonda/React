@@ -1,5 +1,4 @@
 const Greeting = (props) =>{
-    
     const isLoggedIn = props.isLoggedIn; 
     if(isLoggedIn){
         return <h1> Welcome Back! </h1>
